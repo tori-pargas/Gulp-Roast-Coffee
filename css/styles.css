@@ -90,7 +90,13 @@ body
     flex-basis: 73%;
     padding: 2rem;
   }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5px;
+      height: auto;
+      margin: 5% round;}
     figure {
       margin: 3rem 0 0 0;
       flex-basis: 25%;
@@ -110,6 +116,13 @@ body
     figcaption {
       display: none;
     }
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    height: auto;
+    margin: 5% round;
   }
   figure img {
     border-radius: 10px;
