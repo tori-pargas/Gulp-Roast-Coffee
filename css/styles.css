@@ -90,40 +90,109 @@ body
     flex-basis: 73%;
     padding: 2rem;
   }
-  @media only screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 5px;
       height: auto;
-      margin: 5% round;}
+      margin: 3rem;
+    }
+    .wrapperabout {
+      display: flex;
+      flex-direction: left
+    }
+    .itemA, .itemB {
+      flex-basis: 50%;
+    }
+    .imgdesktop, .imgphone {
+      display: none;
+    }
     figure {
       margin: 3rem 0 0 0;
       flex-basis: 25%;
      /* background-color: #59331d; */
       border-radius: 10px;
     }
-  }
+    h1 {
+      margin: 3rem;
+    }
+    }
   @media (min-width: 992px) {
-    figure {
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 5px;
+      height: auto;
+      margin: 5% round;
+    }
+    .wrapperabout {
+      display: flex;
+      flex-direction: left;
+      height: auto;
+      margin: 5% round;
+    }
+    .main {
+      display: flex;
+      flex-direction: left;
+      height: auto;
+      margin: 5% round;
+    }
+    .itemA {
+      flex-basis: 50%;
+    }
+    .itemB {
+      flex-basis: 50%;
+    }
+    .imgdesktop {
+      display: block
+    }
+    .imgtablet {
+      display: none;
+    }
+    .imgphone {
+      display: none;
+    }
+    .itemC {
+      flex-basis: 50%;
+    }
+    .itemD {
+      flex-basis: 50%;
+    }
+    /* figure {
       margin: 3rem 0 0 0;
-      flex-basis: 25%;
+      flex-basis: 25%; */
     /*  background-color: #59331d; */
-      border-radius: 10px;
-    }  
-  }
+    /*  border-radius: 10px;
+    } */
+    .wrapper h2 {
+      margin: -2rem;
+    }
+    .imgmenu {
+      height: auto;
+      max-width: 100%;
+    }
+    } 
+
   @media (max-width: 767px) {
     figcaption {
       display: none;
     }
+    .imgtablet, .imgdesktop {
+      display: none;
+    }
+    .imgmenu {
+      height: auto;
+      max-width: 100%;
+    }
   }
-  .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5px;
-    height: auto;
-    margin: 5% round;
+
+  .pcontact {
+    padding: 0;
+    margin: 0;
+    line-height: -30;
   }
+
   figure img {
     border-radius: 10px;
   }
